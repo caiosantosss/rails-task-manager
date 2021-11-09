@@ -1,0 +1,15 @@
+<%= form_for(@task) do |f| %>
+<div class="form-group">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<div class="form-group">
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+</div>
+<div class="form-group mt-1">
+  <%= f.submit %>
+</div>
+<% end %>
+
+<p><%= link_to "Back to list of Tasks", tasks_path  %></p>
